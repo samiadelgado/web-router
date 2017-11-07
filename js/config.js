@@ -2,10 +2,10 @@ angular
 	.module('app')
 	.config( function ($stateProvider, $urlRouterProvider){
 		$stateProvider
-			.state( 'home',{
+			.state( 'main',{
 				url: '/',
 				controller: 'HomeController as ctrl',
-				templateUrl: '../index.html'
+				templateUrl: '../main.html'
 			})
 
 			.state( 'work',{
