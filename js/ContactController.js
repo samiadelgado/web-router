@@ -1,19 +1,15 @@
-function ContactController(){
+function ContactController($interval){
 	console.log("Estoy en contact");
-	function initialize() {
-	    var latlng = new google.maps.LatLng(-34.397, 150.644);
-	    var myOptions = {
-	        zoom: 8,
-	        center: latlng,
-	        mapTypeId: google.maps.MapTypeId.ROADMAP
-	    };
-	    var map = new google.maps.Map(document.getElementById("map"),
-	            myOptions);
-	}
-	google.maps.event.addDomListener(window, "load", initialize);
+        this.map = {
+                    center: {
+                              latitude: 56.162939,
+                              longitude: 10.203921  
+                        	},
+                     zoom: 8    
+                };        
 }
 
 angular
-	.module('app')
+	.module('app' ,['uiGmapgoogle-maps'])
 	.controller('ContactController', ContactController)
 	
