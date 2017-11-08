@@ -5,19 +5,19 @@ angular
 			.state( 'main',{
 				url: '/',
 				controller: 'HomeController as ctrl',
-				templateUrl: '../main.html'
+				templateUrl: 'main.html'
 			})
 
 			.state( 'work',{
 				url: '/work',
 				controller: 'WorkController as ctrl',
-				templateUrl: '../work.html'
+				templateUrl: 'work.html'
 			})
 
 			.state( 'contact',{
 				url: '/contact',
 				controller: 'ContactController as ctrl',
-				templateUrl: '../contact.html'
+				templateUrl: 'contact.html'
 			});
 
 		$urlRouterProvider.otherwise('/');
